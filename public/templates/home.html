@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div id="close" class="alert alert-success fade in">
+      <a class="close"  data-dismiss="alert">&times;</a>
+      <strong>Success!</strong> Your contact has been saved.
+    </div>
+
+    <div class="row head">
+      <button ng-click="toggleMessage()" class=" add btn btn-primary">add contact </button>
+    </div>
+
+    <div class="row contactBox" ng-repeat="contact in contactList | orderBy:'lastName' track by $index">
+      <div class="col-sm-4">
+          <div class=" col-sm-2"><img src="images/userImg.jpg"></div>
+
+          <div class="name col-sm-5">{{contact.lastName}}</div>
+          <div class="name col-sm-5">{{contact.firstName}}</div>
+      </div>
+      <div class="col-sm-7">
+
+          <div>
+            <img src="images/email_icon.jpg">
+          </div>
+          <div class="email">
+            {{contact.email}}
+          </div>
+
+      </div>
+      <div class="col-sm-1">
+        <!-- <button id="remove" class="glyphicon glyphicon-trash btn btn-danger"> delete</button> -->
+      </div>
+    </div>
+
+
+</div>

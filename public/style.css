@@ -1,0 +1,9 @@
+input {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.test {
+  background-color: red;
+  height: 100px;
+}
