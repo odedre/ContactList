@@ -5,7 +5,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 
 $stateProvider
     .state('home', {
-    url: '/home',
+    url: '/',
     controller: 'mainCtrl',
     templateUrl: './templates/home.html',
     resolve: {
@@ -23,6 +23,6 @@ $stateProvider
     templateUrl: './templates/addContact.html'
   });
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 //
 }]);

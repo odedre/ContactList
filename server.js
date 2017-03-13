@@ -38,7 +38,6 @@ app.post('/addContact', function(req, res, next){
 
   var contact = new Contact(req.body);
 
-  console.log("hello handsome ;) ");
 
   contact.save(function(err, contact){
     if(err){

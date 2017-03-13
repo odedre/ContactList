@@ -3,7 +3,7 @@ app.controller('mainCtrl', ['$scope', 'mainService', '$state', function($scope, 
   // console.log(mainService.showSuccessMessage);
   // $scope.showSuccessMessage = mainService.showSuccessMessage;
   $scope.contactList = mainService.contactList;
-
+  $scope.emptyMessage = mainService.message;
   $scope.addContact = function (e) {
     // console.log($state.params);
     console.log('add contact invoked!');
@@ -34,6 +34,7 @@ app.controller('mainCtrl', ['$scope', 'mainService', '$state', function($scope, 
   $scope.goHome = function() {
     console.log('sdsdsd');
     $state.go('home');
+    // mainService.getAllContacts();
   }
 
 

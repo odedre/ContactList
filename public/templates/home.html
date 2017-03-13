@@ -9,9 +9,13 @@
       <button ng-click="toggleMessage()" class=" add btn btn-primary">add contact </button>
     </div>
 
+    <h1 class="empty-message">{{emptyMessage}}</h1>
+
     <div class="row contactBox" ng-repeat="contact in contactList | orderBy:'lastName' track by $index">
       <div class="col-sm-4">
-          <div class=" col-sm-2"><img src="images/userImg.jpg"></div>
+          <div class=" col-sm-2">
+            <img src="images/userImg.jpg">
+          </div>
 
           <div class="name col-sm-5">{{contact.lastName}}</div>
           <div class="name col-sm-5">{{contact.firstName}}</div>
