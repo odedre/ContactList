@@ -2,7 +2,10 @@ body {
   background: #eef1e9; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  color: rgba(171, 171, 198, 0.86);
+}
 
 img {
   height: 50px;

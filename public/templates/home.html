@@ -4,7 +4,7 @@
 
      <!-- navigate to addContact route -->
     <div class="row">
-      <button ng-click="goToAdd()" class=" goToAddButton btn btn-primary">add contact </button>
+      <button ng-click="goToAdd()" class="goToAddButton btn btn-primary">add contact </button>
     </div>
 
     <!-- message to show when a new contact was added or if there are no contacts in list -->
@@ -13,26 +13,21 @@
     <!-- contacts display and sort by last name-->
     <div class="row contactBox" ng-repeat="contact in contactList | orderBy:'lastName' track by $index">
       <div class="col-sm-4">
-          <div class=" col-sm-2">
+          <div class="col-sm-2">
             <img src="images/userImg.jpg">
           </div>
 
           <div class="name col-sm-5">{{contact.lastName}}</div>
           <div class="name col-sm-5">{{contact.firstName}}</div>
       </div>
-      <div class="col-sm-7">
 
-          <div>
-            <img src="images/email_icon.jpg">
-          </div>
-          <div class="email">
-            {{contact.email}}
-          </div>
+      <div class="col-sm-8">
+        <div>
+          <img src="images/email_icon.jpg">
+        </div>
+        <div class="email">{{contact.email}}</div>
+      </div>
 
-      </div>
-      <div class="col-sm-1">
-      </div>
     </div>
-
-
+    
 </div>
