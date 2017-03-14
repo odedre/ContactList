@@ -1,16 +1,16 @@
+<!-- home page where contact list is displayed -->
+
 <div class="container">
 
-    <div id="close" class="alert alert-success fade in">
-      <a class="close"  data-dismiss="alert">&times;</a>
-      <strong>Success!</strong> Your contact has been saved.
+     <!-- navigate to addContact route -->
+    <div class="row">
+      <button ng-click="goToAdd()" class=" goToAddButton btn btn-primary">add contact </button>
     </div>
 
-    <div class="row head">
-      <button ng-click="toggleMessage()" class=" add btn btn-primary">add contact </button>
-    </div>
+    <!-- message to show when a new contact was added or if there are no contacts in list -->
+    <h1 class="message">{{message}}</h1>
 
-    <h1 class="empty-message">{{emptyMessage}}</h1>
-
+    <!-- contacts display and sort by last name-->
     <div class="row contactBox" ng-repeat="contact in contactList | orderBy:'lastName' track by $index">
       <div class="col-sm-4">
           <div class=" col-sm-2">
@@ -31,7 +31,6 @@
 
       </div>
       <div class="col-sm-1">
-        <!-- <button id="remove" class="glyphicon glyphicon-trash btn btn-danger"> delete</button> -->
       </div>
     </div>
 

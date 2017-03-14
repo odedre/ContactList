@@ -3,27 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <base href="/#/">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script> -->
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Bangers:400' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="sassStyle.css">
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+    <!-- font for header -->
+    <link href='https://fonts.googleapis.com/css?family=Bangers:400' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="sassStyle.css" />
 
   </head>
   <body ng-app="contacts">
 
     <div class="header-background">
-      <h1 class="main-header">Contact List</h1>
+      <h1 class="contact-list-header">Contact List</h1>
     </div>
+
     <div ui-view></div>
 
     <script src="angular/angular.min.js"></script>
     <script src="angular-ui-router/release/angular-ui-router.js"></script>
-    <!-- <script src="angular-ui-router/src/urlRouter.js"></script> -->
 
     <script src="js/module.js"></script>
     <script src="js/services/mainService.js"></script>

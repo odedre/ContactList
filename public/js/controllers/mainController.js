@@ -1,40 +1,34 @@
 app.controller('mainCtrl', ['$scope', 'mainService', '$state', function($scope, mainService, $state){
-  console.log('arrrr');
-  // console.log(mainService.showSuccessMessage);
-  // $scope.showSuccessMessage = mainService.showSuccessMessage;
+
+  //getting data from service
   $scope.contactList = mainService.contactList;
-  $scope.emptyMessage = mainService.message;
+  $scope.message = mainService.message;
+
+  //add a new contact from the form and create a "contact" object
   $scope.addContact = function (e) {
-    // console.log($state.params);
-    console.log('add contact invoked!');
-    if ($scope.name === '') { return; }
 
     var contact = {
       firstName: $scope.fName,
       lastName: $scope.lName,
       email: $scope.email
     };
-    // mainService.showSuccessMessage = true;
-    // console.log("success-- " + showSuccessMessage);
-    console.log(contact);
+
+    //pass data to service, navigate to home page and invoke population of list
     mainService.addContact(contact);
     $state.go('home');
     mainService.getAllContacts();
-    // document.getElementById('close').style.display = "block";
-
   },
 
-  $scope.toggleMessage = function() {
-    // mainService.showSuccessMessage = false;
-    // console.log("toggleMessage: " + mainService.showSuccessMessage);
+  //navigate from "home" to "addContact" page
+  $scope.goToAdd = function() {
     $state.go('addContact');
 
   },
 
+  //navigate from "addContact" to "home" page 
   $scope.goHome = function() {
-    console.log('sdsdsd');
     $state.go('home');
-    // mainService.getAllContacts();
+    mainService.message ="";
   }
 
 

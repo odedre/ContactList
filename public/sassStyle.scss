@@ -1,50 +1,54 @@
-$primaryColor: #eef1e9;
-
-
+//html elements
 body {
-    background: $primaryColor;
+    background: #eef1e9;
 }
 
-#close {
-  display: none;
+h1 {
+  text-align: center;
+}
+img {
+  height: 50px;
+  float: left;
+  vertical-align: middle;
+}
+
+//bootstrap classes
+.row {
+    margin-bottom: 10px;
+}
+
+.form-control {
+  width: 50%;
+  margin: 0 auto;
+}
+
+//custom classes
+  //buttons
+.goToAddButton {
+  float: right;
+  margin-top: 10px;
+}
+
+.submit {
+  margin-left: 25%;
+}
+
+.cancel {
+  margin-left: 20px;
+}
+
+  //page layout
+.contact-list-header {
+  font-family: 'Bangers', cursive;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .header-background {
   background-color: #a394f5;
   height: 100px;
-}
-
-.row {
-    margin-bottom: 10px;
-
-}
-
-
-.name {
-  font-size: 20px;
-  overflow: hidden;
-  text-align: center;
-  padding-top: 12px;
-}
-
-.email {
-  font-size: 20px;
-  overflow: hidden;
-  padding-top: 12px;
-}
-
-h1 {
-  text-align: center;
-
-}
-
-.head {
-  position: relative;
-}
-
-.add {
-  float: right;
-  margin-top: 10px;
 }
 
 .contactBox {
@@ -57,45 +61,15 @@ h1 {
   box-shadow: -1px 4px 5px 0px #c9c5c9;
 }
 
-// .userImg {
-//   float: left;
-//   vertical-align: middle;
-//
-// }
-
-.form-control {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.submit {
-  margin-left: 25%;
-
-
-}
-.cancel {
-  margin-left: 20px;
-}
-
-.glyphicon-envelope {
-  padding-left: 80px;
-  padding-right: 10px;
-}
-
-.glyphicon {
-  font-size: 1.5em;
-}
-
-.main-header {
-  font-family: 'Bangers', cursive;
-  font-size: 5em;
-  color: white;
+.name {
+  font-size: 20px;
+  overflow: hidden;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
-img {
-  height: 50px;
-  float: left;
-  vertical-align: middle;
+.email {
+  font-size: 20px;
+  overflow: hidden;
+  padding-top: 12px;
 }

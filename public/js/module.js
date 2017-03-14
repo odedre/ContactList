@@ -10,10 +10,8 @@ $stateProvider
     templateUrl: './templates/home.html',
     resolve: {
         getDetails: ['mainService', function(mainService) {
-            // console.log($stateParams.id);
-            console.log(mainService.contactList);
             return mainService.getAllContacts();
-          }]
+        }]
     }
 
   })
@@ -24,5 +22,4 @@ $stateProvider
   });
 
     $urlRouterProvider.otherwise('/');
-//
 }]);
