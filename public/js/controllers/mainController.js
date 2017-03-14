@@ -25,7 +25,7 @@ app.controller('mainCtrl', ['$scope', 'mainService', '$state', function($scope, 
 
   },
 
-  //navigate from "addContact" to "home" page 
+  //navigate from "addContact" to "home" page
   $scope.goHome = function() {
     $state.go('home');
     mainService.message ="";

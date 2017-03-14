@@ -34,7 +34,7 @@ app.factory('mainService', ['$http', function($http){
     addContact: function(contact) {
       return $http.post('/addContact/', contact).then(function(data) {
         serviceData.getAllContacts();
-        serviceData.message = 'Contact Added!'
+        serviceData.message = 'Contact Added!';
       });
     }
   }
